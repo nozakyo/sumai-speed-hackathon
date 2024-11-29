@@ -83,7 +83,7 @@ config.set(null, "microdata", {"waitTimeMs":500});
 config.set("1231456513590540", "prohibitedSources", {"prohibitedSources":[]});
 fbq.loadPlugin("prohibitedsources");
 instance.optIn("1231456513590540", "ProhibitedSources", true);
-config.set("1231456513590540", "unwantedData", {"blacklisted_keys":{"InitiateCheckout":{"cd":["bck"],"url":[]},"Search":{"cd":["vos"],"url":["lat","lon","tshurui[]","kz","kt","e[0]","e[32]","e[31]"]},"ViewContent":{"cd":[],"url":["lon","jspIdFlg","ohf","tochiFlg","ra","initKbn","kamin","houi[3]"]},"PageView":{"cd":["vos"],"url":["lat","cnb","heikiGamenShu","lastname","firstFlg","lastNameKj","lon","hb"]}},"sensitive_keys":{}});
+config.set("1231456513590540", "unwantedData", {"blacklisted_keys":{"InitiateCheckout":{"cd":["bck"],"url":[]},"Search":{"cd":["vos"],"url":["lat","lon","tshurui[]","kz","kt","e[0]","e[32]","e[31]"]},"ViewContent":{"cd":["bc"],"url":["lon","jspIdFlg","ohf","tochiFlg","ra","initKbn","kamin","houi[3]"]},"PageView":{"cd":["bc"],"url":["lat","cnb","heikiGamenShu","lastname","firstFlg","lastNameKj","lon","hb"]}},"sensitive_keys":{}});
 fbq.loadPlugin("unwanteddata");
 instance.optIn("1231456513590540", "UnwantedData", true);
 config.set("1231456513590540", "IABPCMAEBridge", {"enableAutoEventId":true});

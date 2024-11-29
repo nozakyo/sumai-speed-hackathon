@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/***************************************************
+* RESET CSS
+***************************************************/
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	color: #333;
+	font-size: 12px;
+	line-height: 1;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dt, dd {
+	margin: 0;
+	padding: 0;
+}
+
+article, footer, header, nav, section {
+	display: block;
+}
+
+body, button, input, select, textarea {
+	font-family: sans-serif;
+}
+
+button, input, select, textarea {
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+select {
+	font-size: 14px;
+}
+
+button, input[type="button"],
+input[type="reset"], input[type="submit"] {
+	-webkit-appearance: button;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input[type="checkbox"] {
+	padding: 10px;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	padding: 0;
+}
+
+img {
+	border: 0;
+}
+
+textarea {
+	vertical-align: top;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	color: #06c;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #06c;
+}
+
+a, label {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
