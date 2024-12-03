@@ -21,6 +21,10 @@ npm run start
 localhostでLighthouseを動かして、Performanceスコアが高いチームが勝ち
 （※PCが重いとスコアが下がるらしいので計測する時は注意）
 
+計測する時、Deviceが「Mobile」になっているか確認お願いします
+
+<img src="./lighthouse_setting.png" alt="Lighthouse設定画面" width="500">
+
 #### 1. 既存画面の動作を変えてはならない
 仕様書は無いので、実際に動かして確認お願いします
 画面描画に関係ないタグは削除してOK
