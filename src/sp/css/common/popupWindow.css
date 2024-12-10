@@ -1,0 +1,223 @@
+@CHARSET "UTF-8";
+
+/***************************************************
+* 繝昴ャ繝励い繝��
+***************************************************/
+.popup-overlay {
+	display: none;
+	position: fixed;
+	background-color: #000;
+	opacity: 0.7;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 9999999;
+}
+
+.popup_wrap {
+	text-align: center;
+	background-color: #fff;
+	position: fixed;
+	top: 45%;
+	left: 50%;
+	width: 250px;
+	margin: -66px 0 0 -125px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 2px 2px rgba(14, 5, 10, 0.15);
+	box-shadow: 0 2px 2px rgba(14, 5, 10, 0.15);
+	display: none;
+	z-index: 10000000;
+}
+
+.popup-body {
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+}
+
+.innercontent {
+	display: table-cell;
+	width: 100%;
+	vertical-align: middle;
+	padding: 13px 15px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.innercontent-title {
+	font-size: 15px;
+	font-weight: bold;
+	position: relative;
+	padding-left: 30px;
+	text-align: left;
+	display: inline-block;
+	line-height: 20px;
+	white-space: nowrap;
+}
+
+/* 繝�ヵ繧ｩ繝ｫ繝医ユ繝ｳ繝励Ξ繝ｼ繝医�謚倥ｊ霑斐＠譛牙柑縲∵枚險縺碁聞縺��ｴ蜷医�繧ｹ繧ｯ繝ｭ繝ｼ繝ｫ繝舌�陦ｨ遉ｺ */
+#js-defaultMSG .innercontent-title {
+	white-space: normal;
+	max-height: 100px;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+/* 繧ｹ繧ｯ繝ｭ繝ｼ繝ｫ繝舌�譛ｬ菴� */
+#js-defaultMSG .innercontent-title::-webkit-scrollbar {
+	width: 5px;
+}
+
+/* 繧ｹ繧ｯ繝ｭ繝ｼ繝ｫ繝舌�縺ｮ蜍輔￥驛ｨ蛻� */
+#js-defaultMSG .innercontent-title::-webkit-scrollbar-thumb {
+	background: #555;
+	border-radius: 2px;
+}
+
+/* 繧ｹ繧ｯ繝ｭ繝ｼ繝ｫ繝舌�隗� */
+#js-defaultMSG .innercontent-title::-webkit-scrollbar-corner {
+	background: transparent;
+}
+
+.innercontent-title.no-icon {
+	padding: 0;
+}
+
+.innercontent-text {
+	font-size: 11px;
+	vertical-align: middle;
+	margin-top: 15px;
+	text-align: left;
+	overflow-wrap: anywhere;
+}
+
+.popup-footer {
+	display: table;
+	width: 100%;
+	height: 43px;
+	border-top: 1px solid #d8d8d8;
+}
+
+.popup-footer a {
+	display: table-cell;
+	color: #068bf1;
+	font-size: 14px;
+	font-weight: bold;
+	vertical-align: middle;
+	padding: 15px 0;
+}
+
+.popup-footer a.ui-hover {
+	background-color: #eaeaea;
+	-webkit-border-radius: 0 0 6px 6px;
+	border-radius: 0 0 6px 6px;
+}
+
+.popupmsgs {
+	display: none;
+}
+
+/***************************************************
+* 縺頑ｰ励↓蜈･繧顔匳骭ｲ繝昴ャ繝励い繝��
+***************************************************/
+.icon-favorite:before {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 19px;
+	background: no-repeat url(https://wwwtst.asset01.suumo.jp/sp/img/common/popup/favorite_on.png?id=20241210a6b387478a4);
+	-webkit-background-size: 20px 19px;
+	background-size: 20px 19px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -10px;
+}
+
+#js-deleteMylistMSG .icon-favorite:before {
+	background: no-repeat url(https://wwwtst.asset01.suumo.jp/sp/img/common/popup/favorite_off.png?id=20241210a6b387478a4);
+	-webkit-background-size: 20px 19px;
+	background-size: 20px 19px;
+}
+
+#js-overMylistMSG .icon-favorite:before {
+	background-image: url(https://wwwtst.asset01.suumo.jp/sp/img/common/popup/favorite_on.png?id=20241210a6b387478a4);
+}
+
+p.explain-message {
+	padding: 0;
+	font-size: 13px;
+}
+
+div.explain-icon {
+	margin-top: 10px;
+}
+
+div.explain-icon p.icon-favorite:before {
+	content: "";
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: no-repeat url(https://wwwtst.asset01.suumo.jp/sp/img/common/popup/favorite_off.png?id=20241210a6b387478a4);
+	background-size: 18px 18px;
+	-webkit-background-size: 18px 18px;
+	border: none;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -10px;
+}
+
+div.explain-icon p.icon-not-favorite:before {
+	content: "";
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: no-repeat url(https://wwwtst.asset01.suumo.jp/sp/img/common/popup/favorite_on.png?id=20241210a6b387478a4);
+	background-size: 18px 18px;
+	-webkit-background-size: 18px 18px;
+	border: none;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -10px;
+}
+
+div.explain-icon p.icon-favorite,
+div.explain-icon p.icon-not-favorite {
+	display: inline;
+	padding-left: 22px;
+	margin: 0 5px;
+	font-size: 12px;
+}
+
+.icon-menu-favorite:before {
+	content: "";
+	display: inline-block;
+	width: 35px;
+	height: 25px;
+	background: no-repeat url(https://wwwtst.asset01.suumo.jp/sp/img/common/popup/menu_favorite.png?id=20241210a6b387478a4);
+	-webkit-background-size: 35px 25px;
+	background-size: 35px 25px;
+	vertical-align: middle;
+	padding-right: 5px;
+}
+
+/***************************************************
+* 讀懃ｴ｢譚｡莉ｶ逋ｻ骭ｲ繝昴ャ繝励い繝��
+***************************************************/
+.icon-savecondition:before {
+	content: "";
+	display: block;
+	width: 22px;
+	height: 18px;
+	background: url(https://wwwtst.asset01.suumo.jp/sp/img/common/popup/cond.png?id=20241210a6b387478a4);
+	background-size: 22px 18px;
+	-webkit-background-size: 22px 18px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -9px;
+}
