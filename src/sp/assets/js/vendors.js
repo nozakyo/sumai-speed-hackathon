@@ -1072,7 +1072,7 @@
                 t.$triggers.removeClass("addGifAnime"),
                 t.$triggers.addClass("addGifAnime"),
                 e = document.createElement("SPAN"),
-                (n = new Image).src = "https://asset01.suumo.jp/sp/img/mansion/detail/heart_anime.gif?r=" + Date.now(),
+                (n = new Image).src = "/sp/img/mansion/detail/heart_anime.gif?r=" + Date.now(),
                 n.style.borderRadius = "0.5em",
                 n.style.display = "none",
                 e.appendChild(n),
